@@ -8,6 +8,6 @@ public class Main {
 
         String s = sc.next(), t = sc.next();
 
-        System.out.printf("%s\n%s",s,t);
+        System.out.printf("%s\n%s",t,s);
     }
 }
