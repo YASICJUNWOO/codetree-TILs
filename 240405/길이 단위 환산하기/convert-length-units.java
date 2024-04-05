@@ -9,6 +9,6 @@ public class Main {
 
         double d = sc.nextDouble();
 
-        System.out.printf("%.1f",d);
+        System.out.printf("%.1f",d*ft);
     }
 }
