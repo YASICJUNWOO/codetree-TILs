@@ -10,6 +10,6 @@ public class Main {
 
         String y = sc.next(), m = sc.next(), d = sc.next();
 
-        System.out.printf("%s.%s.%s",y,m,d);
+        System.out.printf("%s-%s-%s",m,d,y);
     }
 }
