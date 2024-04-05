@@ -9,6 +9,6 @@ public class Main {
         int a = sc.nextInt(), b = sc.nextInt(), c = sc.nextInt();
 
         System.out.printf("%d\n",a+b+c);
-        System.out.printf("%.0f",(a+b+c)/3.0);
+        System.out.printf("%d",(a+b+c)/3);
     }
 }
