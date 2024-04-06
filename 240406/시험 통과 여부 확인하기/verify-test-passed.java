@@ -11,7 +11,7 @@ public class Main {
             System.out.print("pass");
         }
         else{
-            System.out.print(80-score);
+            System.out.printf("%d more score",80-score);
         }
     }
 }
