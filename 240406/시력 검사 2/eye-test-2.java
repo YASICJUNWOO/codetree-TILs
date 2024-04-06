@@ -13,7 +13,7 @@ public class Main {
         if(eye>=1.0){
             state = "High";
         }
-        else if(state>=0.5){
+        else if(eye>=0.5){
             state = "Middle";
         }
         else{
