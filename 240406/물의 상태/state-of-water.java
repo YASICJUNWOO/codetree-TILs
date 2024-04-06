@@ -12,7 +12,7 @@ public class Main {
         if(tem < 0 ){
             type = "ice";
         }
-        else (tem>=100){
+        else if(tem>=100){
             type = "vapor";
         }
         else{
