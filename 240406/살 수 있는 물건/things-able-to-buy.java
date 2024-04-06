@@ -13,8 +13,11 @@ public class Main {
         if(money >= 3000){
             item = "book";
         }
-        else{
+        else if (money>= 1000){
             item = "mask";
+        }
+        else{
+            item = "no";
         }
 
         System.out.print(item);
