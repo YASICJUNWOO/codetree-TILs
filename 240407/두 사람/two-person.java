@@ -20,5 +20,8 @@ public class Main {
         else if( age2 >= 19 && gender2.equals("M") ){
             System.out.print(1);
         }
+        else{
+            .System.out.print(0);
+        }
     }
 }
