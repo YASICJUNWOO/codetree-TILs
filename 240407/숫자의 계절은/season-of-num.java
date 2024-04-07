@@ -17,7 +17,7 @@ public class Main {
             System.out.print("Summer"); 
         }
         else{
-            System.out.print("fALL"); 
+            System.out.print("Fall"); 
         }
     }
 }
