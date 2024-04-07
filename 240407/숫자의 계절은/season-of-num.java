@@ -14,10 +14,10 @@ public class Main {
             System.out.print("Spring"); 
         }
         else if(a>=6 && a<=8){
-            System.out.print("Fall"); 
+            System.out.print("Summer"); 
         }
         else{
-            System.out.print("Summer"); 
+            System.out.print("fALL"); 
         }
     }
 }
