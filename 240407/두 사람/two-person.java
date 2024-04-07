@@ -6,18 +6,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int age1, age2;
-        char gender1, gender2;
+        String gender1, gender2;
 
         age1 = sc.nextInt();
-        gender1 = sc.next().charAt(0);
+        gender1 = sc.next();
         age2 = sc.nextInt();
-        gender2 = sc.next().charAt(0);
+        gender2 = sc.next();
 
 
-        if( age1 >= 19 && gender1.equals('M')){
+        if( age1 >= 19 && gender1.equals("M")){
             System.out.print(1);
         }
-        else if( age2 >= 19 && gender2.equals('M') ){
+        else if( age2 >= 19 && gender2.equals("M") ){
             System.out.print(1);
         }
     }
