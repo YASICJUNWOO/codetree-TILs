@@ -14,10 +14,10 @@ public class Main {
         gender2 = sc.next().charAt(0);
 
 
-        if( age1 >= 19 && gender1 == 'M'){
+        if( age1 >= 19 && gender1.equals('M')){
             System.out.print(1);
         }
-        else if( age2 >= 19 && gender2 == 'M'){
+        else if( age2 >= 19 && gender2.equals('M') ){
             System.out.print(1);
         }
     }
