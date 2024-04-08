@@ -13,12 +13,12 @@ public class Main {
                 System.out.print("MAN");
             }
             else{
-                System.out.print("WOMAN");
+                System.out.print("BOY");
             }
         }
         else{
             if(age>=19){
-                System.out.print("BOY");
+                System.out.print("WOMAN");
             }
             else{
                 System.out.print("GIRL");
