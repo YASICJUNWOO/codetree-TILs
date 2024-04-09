@@ -10,7 +10,7 @@ public class Main {
 
         int cnt2 = 0,cnt3 =0, cnt12=0;
 
-        for(int i=1;i<n;i++){
+        for(int i=1;i<=n;i++){
             if(i%12==0){
                 cnt12++;
             }
