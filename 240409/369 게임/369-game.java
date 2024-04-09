@@ -27,7 +27,7 @@ public class Main {
                     num %= 10;
                 }
 
-                if(num%3==0){
+                if(num == 3 || num == 6 || num ==9){
                     result = 0;
                 }
 
