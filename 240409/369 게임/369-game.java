@@ -19,8 +19,8 @@ public class Main {
                 int check;
 
                 while(num>0){
-                    check = i/10;
-                    if(check ==3 || check == 6 || check ==9){
+                    check = num/10;
+                    if(check == 3 || check == 6 || check ==9){
                         result = 0;
                         break;
                     }
