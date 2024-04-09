@@ -24,7 +24,7 @@ public class Main {
                         result = 0;
                         break;
                     }
-                    num /= 10;
+                    num %= 10;
                 }
 
             }
