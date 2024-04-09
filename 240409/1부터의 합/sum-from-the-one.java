@@ -9,7 +9,7 @@ public class Main {
         int n = sc.nextInt();
 
         int sumVal= 0;
-        int answer;
+        int answer = 0;
 
         for(int i = 1;i<=n;i++){
             sumVal+=i;
