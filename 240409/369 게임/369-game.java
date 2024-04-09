@@ -18,13 +18,17 @@ public class Main {
                 int num = i;
                 int check;
 
-                while(num>0){
+                while(num>10){
                     check = num/10;
                     if(check == 3 || check == 6 || check ==9){
                         result = 0;
                         break;
                     }
                     num %= 10;
+                }
+
+                if(num%3==0){
+                    result = 0;
                 }
 
             }
