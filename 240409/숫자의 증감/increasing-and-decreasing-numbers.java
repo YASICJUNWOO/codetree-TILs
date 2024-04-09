@@ -10,12 +10,12 @@ public class Main {
         int n = sc.nextInt();
 
         if(c.equals("A")){
-            for(int i = 0; i<n;i++){
+            for(int i = 1; i<=n;i++){
                 System.out.print(i+" ");
             }
         }
         else{
-            for(int i = n; i>0;i--){
+            for(int i = n; i>=1;i--){
                 System.out.print(i+" ");
             }
         }
