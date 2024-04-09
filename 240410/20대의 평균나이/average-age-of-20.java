@@ -12,7 +12,7 @@ public class Main {
             int input = sc.nextInt();
 
             
-            if(input>=30){
+            if(input>=30 || input<20){
                 break;
             }
             
