@@ -6,7 +6,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
+        int n = 10;
 
         int cnt = 0, sumValue = 0;
 
