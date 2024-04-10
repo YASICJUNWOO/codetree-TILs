@@ -19,7 +19,7 @@ public class Main {
                 arr[i] = second;
             }
             else if(arr[i]==second){
-                arrp[i] =first;
+                arr[i] =first;
             }
         }
 
