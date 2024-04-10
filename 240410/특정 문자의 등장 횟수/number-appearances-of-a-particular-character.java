@@ -14,7 +14,6 @@ public class Main {
 
             String check =str.substring(i,i+2);
 
-            System.out.print(check);
             if(check.equals("ee")){
                 eeSum++;
             }
