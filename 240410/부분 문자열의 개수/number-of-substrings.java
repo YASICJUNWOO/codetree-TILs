@@ -12,7 +12,7 @@ public class Main {
 
         int cnt = 0;
 
-        for(int i = 0;i<str1.length()-checkLength-1 ;i++){
+        for(int i = 0;i<str1.length()-checkLength+1 ;i++){
             String checkStr = str1.substring(i,i+checkLength);
 
 
