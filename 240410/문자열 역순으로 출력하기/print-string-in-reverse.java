@@ -12,7 +12,7 @@ public class Main {
             arr[i] = sc.next();
         }
 
-        for(int i = 3;i>=0;i++){
+        for(int i = 3;i>=0;i--){
             System.out.println(arr[i]);
         }
     }
