@@ -8,15 +8,15 @@ public class Main {
 
         String str =sc.next();
 
-        int len = str.length();
+        int lenIdx = str.length()-1;
 
-        while(len>1){
+        while(lenIdx>0){
             int idx = sc.nextInt();
 
             String result ="";
 
-            if(idx > len){
-                result = str.substring(0,len-1);
+            if(idx > lenIdx){
+                result = str.substring(0,lenIdx);
             }
             else{
                 result = str.substring(0,idx) + str.substring(idx+1);
@@ -25,7 +25,7 @@ public class Main {
 
             System.out.println(result);
             str = result;
-            len--;
+            lenIdx--;
         }
     }
 }
