@@ -8,7 +8,7 @@ public class Main {
 
         String str1 = sc.next(), str2 = sc.next();
 
-        if(str1.length() >= str2.length()){
+        if(str1.length() > str2.length()){
             System.out.print(str1+ " "+ str1.length());
         }
         else if( str1.length()<str2.length()){
