@@ -19,7 +19,7 @@ public class Main {
                 eeSum++;
             }
 
-            if(str.substring(i,i+1).equals("eb")){
+            if(check.equals("eb")){
                 ebSum++;
             }
         }
