@@ -36,11 +36,11 @@ public class Main {
     }
 
     public static void dfs(int idx){
-        for(int i = 0; i<=n ;i++){
+        for(int i = 1; i<=n ;i++){
             if(arr[idx][i] == 1 && visit[i] == 0){
                 cnt++;
                 visit[i] = 1;
-                dfs(arr[idx][i]);
+                dfs(i);
             }
         }
     }
