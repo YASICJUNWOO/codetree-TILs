@@ -25,7 +25,7 @@ public class Main {
 
                 for(int s = 0; s<3;s++){
                     for(int t = 0;t<3;t++){
-                        sumVal += arr[s][t];
+                        sumVal += arr[i+s][j+t];
                     }
                 }
 
