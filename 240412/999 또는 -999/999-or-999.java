@@ -9,15 +9,21 @@ public class Main {
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
 
-        do{
-            int input = sc.nextInt();
+        int input = 0;
+
+        while(true){
+            input = sc.nextInt();
+
+            if(input==999 || input == -999){
+                break;
+            }
             if(input>max){
                 max = input;
             }
             if(input<min){
                 min = input;
             }
-        }while(input!=999 && input != -999);
+        }
 
         System.out.print(max+" "+min);
 
