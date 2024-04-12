@@ -27,6 +27,6 @@ public class Main {
             System.out.print(seroAvg[i]/2.0+" ");
         }
         System.out.println();
-        System.out.print(totalAvg/8.0);
+        System.out.printf("%.1f",totalAvg/8.0);
     }
 }
