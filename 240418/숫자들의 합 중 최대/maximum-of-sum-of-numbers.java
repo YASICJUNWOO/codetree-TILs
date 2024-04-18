@@ -1,6 +1,17 @@
 import java.util.*;
 
 public class Main {
+    
+    public static int digit(int num){
+        int cnt = 1;
+        while(num>=10){
+            num %= 10;
+            num++;
+        }
+
+        return (int)Math.pow(10,cnt);
+    }
+
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
 
@@ -10,14 +21,19 @@ public class Main {
 
         int maxVal = Integer.MIN_VALUE;
 
+        
+
         for(int i = x; i<=y;i++){
 
             int sum = 0;
             int num = i;
 
+            int d = digit(i); 
+
             while(num>=10){
-                sum += num/10;
-                num %= 10;
+                sum += num/d;
+                num %= d;
+                d /= 10;
             }
 
             sum += num;
