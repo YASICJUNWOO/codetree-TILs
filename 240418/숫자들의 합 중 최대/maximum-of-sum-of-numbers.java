@@ -3,13 +3,14 @@ import java.util.*;
 public class Main {
     
     public static int digit(int num){
+
         int cnt = 1;
-        while(num>=10){
-            num %= 10;
-            num++;
+
+        while(num/cnt > 0){
+            cnt*=10;
         }
 
-        return (int)Math.pow(10,cnt);
+        return cnt/10;
     }
 
     public static void main(String[] args) {
@@ -29,6 +30,7 @@ public class Main {
             int num = i;
 
             int d = digit(i); 
+            
 
             while(num>=10){
                 sum += num/d;
