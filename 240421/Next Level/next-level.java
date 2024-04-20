@@ -18,7 +18,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         Info info1 = new Info("codetree", 10);
-        Info info2 = new Info("hello", 28);
+
+        String idStr = sc.next();
+        int le = sc.nextInt();
+
+        Info info2 = new Info(idStr, le);
 
         System.out.println("user "+ info1.id +" lv "+info1.level);
         
