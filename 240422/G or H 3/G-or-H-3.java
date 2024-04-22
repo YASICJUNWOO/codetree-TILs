@@ -14,7 +14,7 @@ public class Main {
         size = sc.nextInt();
         range = sc.nextInt();
 
-        arr = new int[10000];
+        arr = new int[10001];
 
         for(int i = 0;i<size;i++){
             int idx = sc.nextInt();
