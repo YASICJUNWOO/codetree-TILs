@@ -19,7 +19,7 @@ public class Main {
 
         for(int i = 0; i<6 ;i++){
             for(int j = i+1;j<6;j++){
-                for(int k = 0; k<6;k++){
+                for(int k = j+1; k<6;k++){
                     round(i,j,k);
                 }
             }
@@ -31,6 +31,7 @@ public class Main {
     public static void round(int first, int second, int third){
         int sum1 = arr[first]+arr[second]+arr[third];
         int gap = Math.abs(totalSum-sum1-sum1);
+
         minVal = Math.min(minVal, gap);
     }
 
