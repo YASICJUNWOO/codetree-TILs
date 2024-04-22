@@ -14,7 +14,7 @@ public class Main {
 
         for(int i =0;i<n;i++){
             point[i][0] = sc.nextInt();
-            point[i][0] = sc.nextInt();
+            point[i][1] = sc.nextInt();
         }
 
         int closer = Integer.MAX_VALUE;
@@ -22,6 +22,7 @@ public class Main {
         for(int f = 0 ; f<n;f++){
             for(int s = f+1 ; s<n;s++){
                 int len = getLen(f, s);  
+
                 closer = Math.min(closer, len);
             }
         }
