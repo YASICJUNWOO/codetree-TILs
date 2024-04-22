@@ -22,7 +22,7 @@ public class Main {
         for(int f = 0 ; f<n;f++){
             for(int s = f+1 ; s<n;s++){
                 int len = getLen(f, s);  
-                Math.min(closer, len);
+                closer = Math.min(closer, len);
             }
         }
 
