@@ -23,6 +23,8 @@ public class Main {
             }
         }
 
+        dfs(0,0);
+
         System.out.print(success ? 1 : 0);
 
 
@@ -36,7 +38,9 @@ public class Main {
         }
 
         for(int i = 0;i<2;i++){
+            
             if(canGo(row+dRow[i],col+dCol[i])){
+                
                 dfs(row+dRow[i],col+dCol[i]);
             }
         }
