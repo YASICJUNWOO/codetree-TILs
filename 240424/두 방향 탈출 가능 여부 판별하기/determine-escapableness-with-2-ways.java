@@ -5,7 +5,7 @@ public class Main {
     static int[][] map;
     static int rowSize = 0, colSize = 0;
     static int[] dRow = {1,0};
-    static int[] dCol = {1,0};
+    static int[] dCol = {0,1};
     static boolean success = false;
 
     public static void main(String[] args) {
