@@ -7,6 +7,7 @@ public class Main {
     static int[] dRow = {1,0};
     static int[] dCol = {0,1};
     static boolean success = false;
+    static boolean[][] visit;
 
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
@@ -16,6 +17,7 @@ public class Main {
         rowSize = sc.nextInt(); colSize = sc.nextInt();
 
         map = new int[rowSize][colSize];
+        visit = new boolean[rowSize][colSize];
 
         for(int i = 0 ;i<rowSize;i++){
             for(int j = 0 ;j<colSize;j++){
@@ -35,8 +37,12 @@ public class Main {
         }
 
         for(int i = 0;i<2;i++){
+
+
+            int moveRow = row+dRow[i], moveCol = col+dCol[i];
             
-            if(canGo(row+dRow[i],col+dCol[i])){
+            if(canGo(moveRow,moveCol) && visit[moveRow][moveCol] ==false){
+                visit[moveRow][moveCol] =true;
                 if(dfs(row+dRow[i],col+dCol[i])){
                     return true;
                 };
