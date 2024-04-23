@@ -63,7 +63,7 @@ public class Main {
                         }
                     }
                     
-                    newCount[row][col] = 1;
+                    newCount[row][col] += 1;
                 }
 
             }
