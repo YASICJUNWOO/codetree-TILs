@@ -23,27 +23,27 @@ public class Main {
             }
         }
 
-        dfs(0,0);
-
-        System.out.print(success ? 1 : 0);
+        System.out.print(dfs(0,0) ? 1 : 0);
 
 
     }
 
-    public static void dfs(int row, int col){
+    public static boolean dfs(int row, int col){
 
         if(row == rowSize-1 && col == colSize-1){
-            success = true;
-            return;
+            return true;
         }
 
         for(int i = 0;i<2;i++){
             
             if(canGo(row+dRow[i],col+dCol[i])){
-                
-                dfs(row+dRow[i],col+dCol[i]);
+                if(dfs(row+dRow[i],col+dCol[i])){
+                    return true;
+                };
             }
         }
+
+        return false;
 
     }
 
