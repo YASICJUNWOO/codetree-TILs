@@ -38,6 +38,7 @@ public class Main {
         visit = new boolean[size][size];
 
         int startRow = sc.nextInt(), startCol = sc.nextInt();
+        endRow = sc.nextInt() -1; endCol = sc.nextInt()-1;
 
         q.add(new Info(startRow-1,startCol-1,0));
         visit[0][0] = true;
@@ -57,16 +58,18 @@ public class Main {
             int col = info.col;
             int depth = info.depth;
 
+                if(row == endRow && col == endCol){
+                    cnt = depth;
+                    return;
+                }
+
             for(int i = 0 ;i<8;i++){
                 int targetRow = row + dRow[i];
                 int targetCol = col + dCol[i];
 
                 //System.out.println(targetRow+" "+targetCol+" "+depth);
 
-                if(targetRow == endRow && targetCol == endCol){
-                    cnt = depth;
-                    return;
-                }
+
 
                 if(canGo(targetRow,targetCol) && !visit[targetRow][targetCol]){
                     visit[targetRow][targetCol] = true;
