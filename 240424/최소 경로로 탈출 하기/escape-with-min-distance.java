@@ -17,6 +17,7 @@ public class Main {
     static int[][] map;
     static boolean[][] visit;
     static Queue<Info> q = new LinkedList<>();
+    static int step = -1;
 
     static int[] dRow = {-1,1,0,0};
     static int[] dCol = {0,0,-1,1};
@@ -42,6 +43,7 @@ public class Main {
         visit[0][0] = true;
         bfs();
 
+        System.out.print(step == -1 ? -1 : step);
     }
 
     public static void bfs(){
@@ -54,7 +56,7 @@ public class Main {
             int depth = info.depth;
 
             if(row == rowSize-1 && col == colSize-1){
-                System.out.print(depth);
+                step = depth;
                 return;
             }
 
