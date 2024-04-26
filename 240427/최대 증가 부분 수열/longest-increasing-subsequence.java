@@ -38,7 +38,7 @@ public class Main {
             }
 
             len[i] = maxLen + 1;
-            System.out.print(len[i]+" ");
+            //System.out.print(len[i]+" ");
 
             if(result < len[i]){
                 result = len[i];
