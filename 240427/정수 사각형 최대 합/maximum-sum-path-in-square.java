@@ -18,7 +18,8 @@ public class Main {
 
         for(int idx = 1 ; idx < n;idx++){
             arr[0][idx] += arr[0][idx-1];
-            arr[idx][0] += arr[idx][0];
+            arr[idx][0] += arr[idx-1][0];
+            //System.out.println(arr[idx][0]+" ");
         }
 
         for(int row = 1 ; row<n;row++){
