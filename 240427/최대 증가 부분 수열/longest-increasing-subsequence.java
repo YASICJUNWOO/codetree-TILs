@@ -27,7 +27,7 @@ public class Main {
 
             int currentNum = arr[i];
 
-            int maxLen = Integer.MIN_VALUE;
+            int maxLen = 0;
 
             //자신보다 낮은 수
             //중 최대 길이
