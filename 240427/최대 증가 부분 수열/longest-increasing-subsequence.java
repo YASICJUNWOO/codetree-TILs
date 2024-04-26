@@ -21,7 +21,7 @@ public class Main {
 
         inital();
 
-        int result = Integer.MIN_VALUE;
+        int result = 1;
 
         for(int i = 1;i<n;i++){
 
@@ -38,7 +38,7 @@ public class Main {
             }
 
             len[i] = maxLen + 1;
-            //System.out.print(len[i]+" ");
+            System.out.print(len[i]+" ");
 
             if(result < len[i]){
                 result = len[i];
