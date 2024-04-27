@@ -28,7 +28,13 @@ public class Main {
             int start = sc.nextInt();
             int end = sc.nextInt();
 
-            System.out.println(arr[end] - arr[start-1]);
+            if(start == 0){
+System.out.println(arr[end] - 0);
+            }
+            else{
+System.out.println(arr[end] - arr[start-1]);
+            }
+            
         }
 
     }
