@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
 
-    static int MAX_SIZE = 100000;
+    static int MAX_SIZE = 1000000;
     static int[] arr;
     static int points = 0, ranges = 0;
 
