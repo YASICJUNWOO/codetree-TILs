@@ -17,6 +17,7 @@ public class Main {
     static int[] dRow = {-1,1,0,0};
     static int[] dCol = {0,0,-1,1};
     static int[][] map;
+    static Queue<Point> q = new LinkedList<>();
     
     static int size = 0;
 
@@ -38,9 +39,12 @@ public class Main {
             int startRow = sc.nextInt()-1, startCol = sc.nextInt()-1;
 
             if(map[startRow][startCol] == 0){
-                bfs(startRow,startCol);
+                q.add(new Point(startRow,startCol));
             }
+
         }
+
+        bfs();
 
         int cnt = 0;
 
@@ -56,10 +60,7 @@ public class Main {
 
     }
 
-    public static void bfs(int row, int col){
-        Queue<Point> q = new LinkedList<>();
-
-        q.add(new Point(row,col));
+    public static void bfs(){
 
         while(!q.isEmpty()){
 
