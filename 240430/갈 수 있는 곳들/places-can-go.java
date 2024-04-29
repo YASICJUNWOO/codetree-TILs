@@ -12,8 +12,6 @@ class Point{
 
 public class Main {
 
-    static Scanner sc = new Scanner(System.in);
-
     static int[] dRow = {-1,1,0,0};
     static int[] dCol = {0,0,-1,1};
     static int[][] map;
@@ -24,7 +22,7 @@ public class Main {
 
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
-
+        Scanner sc = new Scanner(System.in);
         size = sc.nextInt();
         int test = sc.nextInt();
         map = new int[size][size];
