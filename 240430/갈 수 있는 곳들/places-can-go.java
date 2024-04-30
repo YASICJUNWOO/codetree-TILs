@@ -37,6 +37,7 @@ public class Main {
             int startRow = sc.nextInt()-1, startCol = sc.nextInt()-1;
 
             if(map[startRow][startCol] == 0){
+                map[startRow][startCol] = 2;
                 q.add(new Point(startRow,startCol));
             }
 
