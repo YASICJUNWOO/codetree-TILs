@@ -65,13 +65,14 @@ public class Main {
             Point p = q.poll();
             int r = p.row;
             int c = p.col;
-            map[r][c] = 2;
+            
 
             for(int i = 0 ;i<4;i++){
                 int targetRow = r + dRow[i];
                 int targetCol = c + dCol[i];
 
                 if(canGo(targetRow,targetCol) && map[targetRow][targetCol] == 0){
+                    map[targetRow][targetCol] = 2;
                     q.add(new Point(targetRow,targetCol));
                 }
             }
