@@ -11,7 +11,7 @@ public class Main {
 
         int maxVal = Integer.MIN_VALUE;
 
-        for(int i = 1 ; i<n;i++){
+        for(int i = 1 ; i<=n;i++){
             arr[i] = sc.nextInt();
         }
 
@@ -20,7 +20,7 @@ public class Main {
             if(arr[i] > maxVal){
                 maxVal = arr[i];
             }
-            System.out.println(arr[i]);
+            
         }
 
         System.out.print(maxVal);
