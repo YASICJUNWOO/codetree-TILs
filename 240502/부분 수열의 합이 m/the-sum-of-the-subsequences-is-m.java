@@ -37,7 +37,7 @@ public class Main {
             //print();
         }
 
-        System.out.print(dp[target]);
+        System.out.print(dp[target] == Integer.MAX_VALUE ? -1 : dp[target]);
 
     }
 
