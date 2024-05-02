@@ -25,7 +25,7 @@ public class Main {
 
         for(int i = 1 ; i<=limit ;i++){
             
-            if(idx >= 3 && valid(idx, i)){
+            if(idx >= 3 && valid(idx-1, i)){
                 continue;
             }
 
