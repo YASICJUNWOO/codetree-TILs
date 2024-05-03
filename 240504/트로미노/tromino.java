@@ -50,6 +50,14 @@ public class Main {
                 max = Math.max(max, sum);
             }
         }
+
+        for(int  row = 1; row<=rowSize; row++){
+            for(int col = 3;col<=colSize; col++){
+                int sum = dp[row][col] - dp[row-1][col] - dp[row][col-3] + dp[row-1][col-3];
+                
+                max = Math.max(max, sum);
+            }
+        }
     }
 
     public static int findMin(int row, int col){
