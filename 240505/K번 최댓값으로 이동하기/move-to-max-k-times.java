@@ -54,13 +54,14 @@ public class Main {
     public static void round(int row, int col, int count){
 
         if(count == test){
-            System.out.print(row+" "+col );
+            System.out.print((row+1)+" "+(col+1) );
             return;
         }
 
-        int targetNum = findMax(arr[row][col]);
+        //System.out.println((row+1)+" "+(col+1) );
+        int targetNum = findMax(row,col);
 
-        int num = findMax(arr[row][col]);
+        int num = findMax(row, col);
 
         if(num == -1){
             System.out.print(row+" "+col );
@@ -72,13 +73,26 @@ public class Main {
         round(p.row,p.col,count+1);
     }
 
-    public static int findMax(int num){
-        for(int i = num-1 ; i>=1 ;i--){
-            if(nums[i]){
-                return i;
+    public static int findMax(int row, int col){
+        int[] dRow = {-1,1,0,0};
+        int[] dCol = {0,0,-1,1};
+
+        int max = -1;
+        for(int i = 0 ; i<4;i++){
+            int targetRow = row + dRow[i];
+            int targetCol = col + dCol[i];
+            
+            if(canGo(targetRow,targetCol) && arr[targetRow][targetCol] < arr[row][col]){
+                max = Math.max(max, arr[targetRow][targetCol]);
             }
+            
         }
-        return -1;
+
+        return max;
+    }
+
+    public static boolean canGo(int row, int col){
+        return row > -1 && col > -1 && row < size && col < size;
     }
 
 }
