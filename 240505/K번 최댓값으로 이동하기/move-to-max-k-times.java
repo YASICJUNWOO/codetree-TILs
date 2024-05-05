@@ -58,13 +58,13 @@ public class Main {
             return;
         }
 
-        //System.out.println((row+1)+" "+(col+1) );
+        
         int targetNum = findMax(row,col);
 
         int num = findMax(row, col);
 
         if(num == -1){
-            System.out.print(row+" "+col );
+            System.out.print((row+1)+" "+(col+1) );
             return;
         }
 
