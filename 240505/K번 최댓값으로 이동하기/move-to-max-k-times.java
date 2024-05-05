@@ -58,10 +58,14 @@ public class Main {
             return;
         }
 
-        
         int targetNum = findMax(arr[row][col]);
 
         int num = findMax(arr[row][col]);
+
+        if(num == -1){
+            System.out.print(row+" "+col );
+            return;
+        }
 
         Point p = points[num];
 
